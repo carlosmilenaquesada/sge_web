@@ -1,0 +1,48 @@
+TABLAS
+
+#usuarios
+-nombre
+-apellidos
+-fecha nacimiento
+-telefono
+-correo electronico
+-imagen_perfil
+-id_usuario (pk)
+-password
+
+
+#compras_usuarios
+-id_compra (pk autoincremental)
+-id_usuario (fk usuarios)
+-id_producto (fk productos)
+-fecha compra
+
+
+#administradores
+-id_usuario (pk, fk usuarios)
+-es_master
+
+#productos
+-id_producto (pk)
+-nombre
+-descripcion
+-categoria
+-precio
+-imagen
+
+#noticias
+-id_noticia (pk autoincremental)
+-titular
+-cuerpo
+-imagen
+
+#equipo
+-id_usuario (pk, fk usuarios)
+
+#ubicacion
+-id_ubicacion (pk)
+-pais
+-ciudad
+-poblacion
+-direccion
+-telefono
